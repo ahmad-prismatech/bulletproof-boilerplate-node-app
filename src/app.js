@@ -4,6 +4,7 @@ require("dotenv").config();
 const config = require("./config/index");
 require("./loaders/morgan")(app);
 require("./loaders/cors")(app);
+require("./loaders/swagger")(app);
 require("./loaders/db")();
 require("./loaders/routes")(app);
 
